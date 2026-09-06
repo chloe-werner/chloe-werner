@@ -248,7 +248,18 @@ footer{background:var(--navy);border-top:0.5px solid rgba(255,255,255,0.1);text-
         </div>
       </div>
       <div class="exp-item">
-        <div><div class="exp-date">Jun &ndash; Aug 2026</div><div class="exp-company">Comparion Insurance</div><div class="exp-role">Sales Intern</div><div class="exp-location">Houston, TX &middot; Liberty Mutual</div><img src="comparion-liberty-mutual.jpg" alt="Liberty Mutual Insurance and Comparion Insurance Agency" style="width:100%;max-width:180px;height:auto;margin-top:0.75rem;display:block;mix-blend-mode:multiply"/></div>
+        <div><div class="exp-date">Jun &ndash; Aug 2026</div><div class="exp-company">Comparion Insurance</div><div class="exp-role">Sales Intern</div><div class="exp-location">Houston, TX &middot; Liberty Mutual</div><svg aria-hidden="true" width="0" height="0" style="position:absolute;pointer-events:none">
+            <defs>
+              <filter id="comparion-remove-background" color-interpolation-filters="sRGB">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -1 -1 -1 0 3"/>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="10" intercept="-1"/>
+                </feComponentTransfer>
+                <feComposite in="SourceGraphic" operator="in"/>
+              </filter>
+            </defs>
+          </svg>
+          <img src="comparion-liberty-mutual.jpg" alt="Liberty Mutual Insurance and Comparion Insurance Agency" style="width:100%;max-width:180px;height:auto;margin-top:0.75rem;display:block;filter:url(#comparion-remove-background)"/></div>
         <div>
           <p class="exp-desc">Spent the summer working alongside insurance agents at Comparion Insurance Agency, a Liberty Mutual company, supporting prospecting, client follow-up, and local business outreach. Through daily calls and field visits, I gained hands-on experience identifying customer needs, building relationships, and helping agents move prospects through the sales pipeline.</p>
           <ul class="exp-bullets">
