@@ -22,7 +22,7 @@ section{padding:6rem 3rem}
 .section-label{font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
 .section-title{font-family:'Bodoni Moda',serif;font-size:clamp(32px,4vw,48px);font-weight:400;line-height:1.15;margin-bottom:2rem;color:var(--text)}
 #hero{min-height:100vh;padding-top:64px;display:flex;flex-direction:column;justify-content:center;background:#fff;padding-left:3rem;padding-right:3rem}
-.hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 300px;align-items:center;gap:4rem}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%;display:grid;grid-template-columns:minmax(0,1fr) 345px;align-items:center;gap:4rem}
 .hero-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
 .hero-name{font-family:'Bodoni Moda',serif;font-size:clamp(64px,9vw,110px);font-weight:400;line-height:0.95;letter-spacing:-0.02em;color:var(--text);margin-bottom:1.5rem}
 .hero-tagline{font-family:'Bodoni Moda',serif;font-size:13px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);line-height:1.8;margin-bottom:2.5rem;max-width:420px}
@@ -31,7 +31,7 @@ section{padding:6rem 3rem}
 .btn-primary:hover{background:var(--navy-mid)}
 .btn-outline{background:transparent;color:var(--text);padding:12px 28px;font-family:'Jost',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border:1px solid var(--text);display:inline-block;transition:all 0.2s}
 .btn-outline:hover{background:var(--text);color:#fff}
-.hero-photo-wrap img{width:300px;height:380px;object-fit:cover;object-position:center top;display:block}
+.hero-photo-wrap img{width:345px;height:437px;object-fit:cover;object-position:center top;display:block}
 #kylefield{height:440px;overflow:hidden}
 #kylefield img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
 #about{background:var(--cream)}
@@ -133,6 +133,8 @@ section{padding:6rem 3rem}
 .contact-link{font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;border-bottom:0.5px solid rgba(255,255,255,0.3);padding-bottom:2px}
 footer{background:var(--navy);border-top:0.5px solid rgba(255,255,255,0.1);text-align:center;padding:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.08em}
 @media(max-width:768px){nav{padding:0 1.5rem}.nav-links{display:none}section,#coursework,#institute,#sales-club{padding:3rem 1.5rem}.hero-inner{grid-template-columns:1fr}.hero-photo-wrap{display:none}.about-grid,.ahs-inner,.project-feature{grid-template-columns:1fr}.exp-item,.inv-sub,.inv-single{grid-template-columns:1fr}.course-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.highlights-row{grid-template-columns:1fr 1fr}.inv-photo{width:100%;height:180px}.study-photo-strip{grid-template-columns:1fr 1fr}}
+.credentials .section-label{font-size:12px}
+.credentials .skill-tag{font-size:14px;padding:10px 18px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -199,7 +201,7 @@ footer{background:var(--navy);border-top:0.5px solid rgba(255,255,255,0.1);text-
       <div class="course-item"><span class="course-code">COMM 471</span><span class="course-name">Media, Health, and Medicine</span><span style="font-size:12px;color:var(--muted);margin-top:0.3rem">In progress &middot; Fall 2026</span></div>
       <div class="course-item"><span class="course-code">MKTG 448</span><span class="course-name">Marketing Strategy</span><span style="font-size:12px;color:var(--muted);margin-top:0.3rem">In progress &middot; Fall 2026</span></div>
     </div>
-    <div style="margin-top:2rem;border-top:0.5px solid var(--border);padding-top:2rem">
+    <div class="credentials" style="margin-top:2rem;border-top:0.5px solid var(--border);padding-top:2rem">
       <p class="section-label">Minors &amp; Certificates</p>
       <div class="skills-list" style="margin-top:0.75rem">
         <span class="skill-tag">Communications Minor</span>
